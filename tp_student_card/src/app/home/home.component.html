@@ -1,0 +1,7 @@
+<h2>Welcome to Student card app creation where everyone deserves a personalized card </h2>
+<div class="list-cards">
+    @for (item of studentList; track item.id) {
+        <app-card [student]="item"></app-card>
+        }
+
+</div>

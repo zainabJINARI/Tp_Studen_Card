@@ -1,0 +1,40 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 5% auto;
+
+    text-align: start;
+    color: #023e8a;
+    
+
+}
+h2{
+    text-align: center;
+}
+
+form input,form select{
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #023e8a;
+
+}
+
+form label{
+    margin-top: 1em;
+}
+
+form button{
+    margin: 2em 0;
+    padding: 0.8em; 
+    background-color: #ade8f4;
+    border-radius: 5px;
+    border: navajowhite;
+    font-weight: bold;
+}
+
+form button:hover{
+  border: 1px solid #023e8a;
+
+}

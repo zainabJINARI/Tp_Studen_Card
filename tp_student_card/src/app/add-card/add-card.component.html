@@ -1,0 +1,24 @@
+<h2>  Fill The form to create your own card🌟</h2>
+
+<form  (ngSubmit)="CreateCard()">
+    <label for="fullname">Full Name</label>
+    <input type="text" placeholder="John Shmoe" name="fullname" id="fullname" [(ngModel)]="student.fullname" required />
+    <label for="schoolname">School Name</label>
+    <select id="schoolname" [(ngModel)]="student.schoolName" name="schoolname" required>
+      
+        <option value="Ecole d'ingenieurie digitale et d'intelligence artificielle">Eidia</option>
+        <option value="Euromed Polytechnic School">EPS</option>
+        <option value="Ecole Euromed d'Architecture de Design et Urbanisme">EMADU</option>
+        <option value="Ecole d'ingénieur BiomedTech">BiomedTech</option>
+        <option value="Faculté des Sciences Humaines et Sociales">FSHS</option>
+        <option value="Euromed Business School">EBS</option>
+    </select>
+
+    <label for="studentid">Matricule</label>
+    <input type="number" placeholder="ex:2000345" id="studentid" name="studentid" [(ngModel)]="student.id" required />
+
+    <label for="rib">RIP Personnel</label>
+    <input type="text" placeholder="ex:234567890876543212345678" id="rib" name="rib" [(ngModel)]="student.rib" required/>
+
+    <button type="submit">Create Card</button>
+</form>
