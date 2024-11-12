@@ -10,7 +10,7 @@ import { CardComponent } from "../card/card.component";
   templateUrl: './success.component.html',
   styleUrl: './success.component.css'
 })
-export class SuccessComponent implements OnInit {
+export class SuccessComponent  {
  
   constructor (private studentSer:StudentsService){
 
@@ -18,8 +18,8 @@ export class SuccessComponent implements OnInit {
   lastStudent?:Student
 
 
-  ngOnInit(): void {
-    this.lastStudent= this.studentSer.getStudentList()[this.studentSer.getStudentList().length-1]
-  }
+  // ngOnInit(): void {
+  //   this.lastStudent= this.studentSer.getStudentList()[this.studentSer.getStudentList().length-1]
+  // }
 
 }
