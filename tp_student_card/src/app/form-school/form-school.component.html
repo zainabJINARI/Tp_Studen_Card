@@ -1,0 +1,11 @@
+<h2>Fill the form to create a new school</h2>
+
+<form (ngSubmit)="createSchool()">
+  <label for="schoolName">School Name</label>
+  <input type="text" id="schoolName" placeholder="Enter School Name" name="schoolName" [(ngModel)]="school.schoolName" required />
+
+  <label for="abrv">School Abbreviation</label>
+  <input type="text" id="abrv" placeholder="Enter Abbreviation" name="abrv" [(ngModel)]="school.abrv" required />
+
+  <button type="submit">Create School</button>
+</form>

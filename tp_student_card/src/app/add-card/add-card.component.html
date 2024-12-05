@@ -6,12 +6,11 @@
     <label for="schoolname">School Name</label>
     <select id="schoolname" [(ngModel)]="student.schoolName" name="schoolname" required>
       
-        <option value="Ecole d'ingenieurie digitale et d'intelligence artificielle">Eidia</option>
-        <option value="Euromed Polytechnic School">EPS</option>
-        <option value="Ecole Euromed d'Architecture de Design et Urbanisme">EMADU</option>
-        <option value="Ecole d'ingénieur BiomedTech">BiomedTech</option>
-        <option value="Faculté des Sciences Humaines et Sociales">FSHS</option>
-        <option value="Euromed Business School">EBS</option>
+        
+
+        @for (item of listSchool; track item.id) {
+            <option [value]="item.schoolName">{{item.abrv}}</option>
+            }
     </select>
 
     <label for="studentid">Matricule</label>

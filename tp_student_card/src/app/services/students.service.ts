@@ -19,6 +19,7 @@ export class StudentsService {
 
   addStudent(student: Student) {
     const currentList = this.studentsList.value;
+    
     this.studentsList.next([...currentList, student]);
   }
 }

@@ -1,0 +1,59 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 5% auto;
+    text-align: start;
+    color: #023e8a;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #023e8a;
+}
+
+form input,
+form select {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #023e8a;
+    font-size: 1rem;
+    margin-top: 0.5em;  /* Add a bit of space between inputs */
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #0096c7;  /* Highlight the border when the field is focused */
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1em;
+    color: #023e8a;
+}
+
+form button {
+    margin: 2em 0;
+    padding: 0.8em;
+    background-color: #ade8f4;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0077b6;  /* Darker background on hover */
+    border: 1px solid #023e8a;
+}
+
+form button:focus {
+    outline: none;
+    border: 1px solid #023e8a; /* Add focus style */
+    background-color: #0077b6;
+}
